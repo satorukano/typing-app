@@ -1,0 +1,11 @@
+version: '3'
+services:
+  dev:
+    image: node:18
+    working_dir: /usr/src/app/
+    entrypoint: bash scripts/entrypoint.sh
+    volumes:
+    - ./:/usr/src/app/
+    ports:
+      - 5173:5173
+    
